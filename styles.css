@@ -139,6 +139,11 @@ ul {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 210px;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(./images/studio-background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .title {
@@ -217,7 +222,9 @@ ul {
 .our-team-section > .subtitle {
   padding-top: 94px;
 }
-
+.our-team-section {
+  width: 1200px;
+}
 .li-items {
   display: flex;
   justify-content: space-between;
@@ -340,11 +347,11 @@ button:focus {
   display: flex;
   justify-content: space-between;
   justify-content: center;
-  margin: 0;
   gap: 30px;
   padding-inline-start: 0;
   padding-top: 50px;
   padding-bottom: 94px;
+  margin: 0;
 }
 
 .image-items-text {
@@ -369,7 +376,9 @@ a:hover {
 a:focus {
   color: var(--link-hover-color);
 }
-
+.footer-text a:hover {
+  color: #fff;
+}
 /* Portfolio Button Section */
 
 .portfolio-btn {
@@ -459,6 +468,9 @@ a:focus {
 .card-items:focus {
   cursor: pointer;
   border-color: var(--link-hover-color);
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* homework 4 */
@@ -585,4 +597,9 @@ a:focus {
   background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  color: currentColor;
 }
