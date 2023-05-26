@@ -451,11 +451,15 @@ a:focus {
   padding-bottom: 28px;
 }
 
-.icon:hover,
-.icon:focus {
+.icons-list a:hover,
+.icons-list a:focus {
   color: #ffffff;
   cursor: pointer;
   background-color: #2196f3;
+  border-radius: 50%;
+}
+a:focus {
+  outline: none;
 }
 
 .icons-list .icon {
