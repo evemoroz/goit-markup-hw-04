@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
 :root {
-  \--raleway-font-family: "Raleway", sans-serif;
-  \--roboto-font-family: "Roboto", sans-serif;
+  --raleway-font-family: "Raleway", sans-serif;
+  --roboto-font-family: "Roboto", sans-serif;
+  --link-hover-color: #2196f3;
 }
 
 body {
@@ -23,9 +24,6 @@ ul {
 
 .container {
   width: 1200px;
-  height: 38px;
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
 .header {
@@ -44,13 +42,12 @@ ul {
 .header-text {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   margin: 0;
   padding: 0;
 }
 .nav-list {
   width: 259px;
-  padding-right: 270px;
 }
 .header-list {
   display: flex;
@@ -72,10 +69,13 @@ ul {
   align-items: center;
   gap: 50px;
   margin: 0;
+  padding-inline-start: 0;
 }
 
 .container.header-text {
-  padding-left: 215px;
+  margin-left: 215px;
+  margin-right: 215px;
+  height: 38px;
 }
 
 .container > a {
@@ -88,6 +88,12 @@ ul {
 }
 .header > a > span {
   color: #2196f3;
+}
+
+.links {
+  width: 259px;
+  height: 48px;
+  margin-left: -270px;
 }
 
 .links a {
@@ -222,11 +228,6 @@ ul {
 
 .card {
   /* card bg */
-  width: 270px;
-  height: 368px;
-  left: 215px;
-  top: 1635px;
-
   background: #ffffff;
   /* material shadow v1 */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -239,16 +240,16 @@ ul {
 
 .footer {
   width: inherit;
+  background-color: #2f303a;
 }
 .footer-text {
-  font-style: normal font;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   padding-top: 60px;
   padding-left: 215px;
   padding-bottom: 60px;
-  background-color: #2f303a;
   display: flex;
   flex-direction: column;
 }
@@ -291,17 +292,20 @@ ul {
 }
 
 button:hover {
-  background-color: #2196f3;
+  background-color: var(--link-hover-color);
   color: #fff;
   cursor: pointer;
 }
 button:focus {
-  background-color: #2196f3;
+  background-color: var(--link-hover-color);
   color: #fff;
   cursor: pointer;
 }
 
 .image-items {
+  font-family: var(--roboto-font-family);
+  font-style: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -309,9 +313,12 @@ button:focus {
   color: #757575;
   display: flex;
   justify-content: space-between;
-  padding: 50px 215px 94px;
+  justify-content: center;
   margin: 0;
   gap: 30px;
+  padding-inline-start: 0;
+  padding-top: 50px;
+  padding-bottom: 94px;
 }
 
 .image-items-text {
@@ -320,17 +327,21 @@ button:focus {
   color: #757575;
 }
 .image-items span {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  font-family: var(--roboto-font-family);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
   color: #212121;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 a:hover {
-  color: #2196f3;
+  color: var(--link-hover-color);
 }
 a:focus {
-  color: #2196f3;
+  color: var(--link-hover-color);
 }
 
 /* Portfolio Button Section */
@@ -421,5 +432,83 @@ a:focus {
 .card-items:hover,
 .card-items:focus {
   cursor: pointer;
-  border-color: #2196f3;
+  border-color: var(--link-hover-color);
+}
+
+/* homework 4 */
+.icons-list {
+  padding-top: 16px;
+  padding-bottom: 30px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  border-bottom: 4px solid #2196f3;
+  padding-bottom: 28px;
+}
+
+.icon:hover,
+.icon:focus {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #2196f3;
+}
+
+.icons-list .icon {
+  height: 20px;
+  width: 20px;
+  fill: #afb1b8;
+}
+.icons-list > a {
+  color: #afb1b8;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-section {
+  display: flex;
+  width: 206px;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.social-text {
+  font-family: var(--roboto-font-family);
+  width: 700;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+
+.footer-items {
+  display: flex;
+  align-items: center;
+  gap: 108px;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  align-items: center;
+}
+
+.social-items {
+  gap: 40px;
+  display: flex;
+}
+
+/* Regular Customers */
+.customers-container {
+  width: 1170px;
+  height: 184px;
 }
