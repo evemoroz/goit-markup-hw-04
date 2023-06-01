@@ -258,11 +258,8 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 0;
-  gap: 10px;
 }
-.card > span {
-  padding-top: 20px;
-}
+
 /* Footer */
 .footer {
   width: inherit;
@@ -372,7 +369,7 @@ button:focus {
   line-height: 1.88;
   color: #757575;
 }
-s .image-items span {
+.image-items span {
   font-family: var(--roboto-font-family);
   font-style: normal;
   font-weight: 500;
@@ -493,7 +490,7 @@ a:focus {
 
 /* homework 4 */
 .icons-list {
-  padding-top: 6px;
+  padding-top: 16px;
   padding-bottom: 30px;
   margin: 0;
   display: flex;
