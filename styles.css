@@ -22,11 +22,6 @@ ul {
   color: #2196f3;
 }
 
-.container {
-  width: 1200px;
-  margin-left: 215px;
-}
-
 .header {
   font-weight: 500;
   font-size: 14px;
@@ -87,6 +82,7 @@ ul {
   margin-left: 215px;
   margin-right: 215px;
   height: 38px;
+  width: 1200px;
 }
 
 .container > a {
@@ -193,6 +189,12 @@ ul {
   padding-inline-start: 1px;
 }
 
+.text-title.container {
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
 .details {
   display: inherit;
   margin: 0;
@@ -256,6 +258,10 @@ ul {
   display: flex;
   flex-direction: column;
   margin: 0;
+  gap: 10px;
+}
+.card > span {
+  padding-top: 20px;
 }
 /* Footer */
 .footer {
@@ -366,7 +372,7 @@ button:focus {
   line-height: 1.88;
   color: #757575;
 }
-.image-items span {
+s .image-items span {
   font-family: var(--roboto-font-family);
   font-style: normal;
   font-weight: 500;
@@ -385,6 +391,11 @@ a:focus {
 }
 .footer-text a:hover {
   color: #fff;
+}
+
+.mail-footer.phone-footer:hover,
+.mail-footer.phone-footer:focus {
+  color: var(--link-hover-color);
 }
 /* Portfolio Button Section */
 
@@ -482,7 +493,7 @@ a:focus {
 
 /* homework 4 */
 .icons-list {
-  padding-top: 16px;
+  padding-top: 6px;
   padding-bottom: 30px;
   margin: 0;
   display: flex;
@@ -546,6 +557,11 @@ a:focus {
   gap: 108px;
 }
 
+.footer-items.container {
+  width: 1200px;
+  margin: auto;
+}
+
 .icon {
   width: 20px;
   height: 20px;
@@ -560,8 +576,8 @@ a:focus {
 
 /* Regular Customers */
 .customers-container {
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .rc-list {
